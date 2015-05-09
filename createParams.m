@@ -22,6 +22,7 @@ params.apPath = 'ap';
 mkdir(params.dataPath);
 mkdir(params.queryPath);
 mkdir(params.tempPath);
+mkdir(params.groundtruthPath);
 
 mkdir(fullfile(params.dataPath, 'image'));
 mkdir(fullfile(params.queryPath, 'image'));
@@ -62,7 +63,7 @@ params.quantStruct = struct( ...
     'quantize', 'kdtree', ...
     'buildParams', struct('algorithm', 'kdtree', 'trees', 8, 'checks', 800, 'cores', 2), ...
     'knn', 3, ...
-    'deltaSqr', 6250 ...
+    'deltaSqr', 6250, ...
     'topK', 100 ...
 );
 
@@ -73,8 +74,8 @@ params.histLen = 1000000;
 
 %% Libraries
 
-% VLFeat 0.9.20
-run('lib/vlfeat-0.9.20/toolbox/vl_setup.m');
+% VLFeat 0.9.19
+run('lib/vlfeat-0.9.19/toolbox/vl_setup.m');
 
 % FLANN 1.8.4
 addpath('lib/flann-1.8.4');
