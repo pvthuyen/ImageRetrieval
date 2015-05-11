@@ -129,7 +129,7 @@ for i = 1:numel(queryFiles)
     distance = all_data_subbow * query_bow;
     [~, sorted_index] = sort(distance, 'descend');
     
-    fid = fopen(fullfile(params.resultPath, changeExt(file, 'txt')), 'w');
+    fid = fopen(fullfile(params.rankListPath, changeExt(file, 'txt')), 'w');
     for j = 1:numImages
         fprintf(fid, '%s\n', files{sortedIndex(j)}(1:end - 4));
     end
