@@ -5,8 +5,6 @@ function extractAllImages(inPath, outPath)
     
     if strfind(params.os, 'win') % Window
         exeFile = fullfile('lib', 'feature_detector', 'compute_descriptors.exe');
-    elseif strfind(params.os, 'mac') % Mac
-        exeFile = fullfile('lib', 'feature_detector', 'compute_descriptors.mac');
     else
         if strfind(params.os, '64')
             exeFile = fullfile('lib', 'feature_detector', 'compute_descriptors_64bit.ln');
