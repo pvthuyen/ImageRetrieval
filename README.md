@@ -12,6 +12,7 @@
 ## lib:
 ### feature_detector:
  - compute_descriptors.mac, compute_descriptors_32bit.ln, compute_descriptors_64bit.ln: extract features and compute descriptors for MAC/Linux32/Linux64, respectively
+
 ### flann-1.8.4: fast library for approximate nearest neighbors
 ### vlfeat-0.9.19: library of computer vision algorithms
 
