@@ -5,7 +5,14 @@ createParams;
 % Compute precision
 files = dir(fullfile(params.rankListPath, '*.txt'));
 files = {files.name};
-exeFile = fullfile(params.groundtruthPath, 'compute_ap.exe');
+
+if strfind(params.os, 'win') % Window
+    exeFile = fullfile(params.groundtruthPath, 'compute_ap.exe');
+elseif strfind(params.os, 'mac') % Mac
+    exeFile = fullfile(params.groundtruthPath, 'compute_ap.mac');
+else
+    exeFile = fullfile(params.groundtruthPath, 'compute_ap.ln');
+end
 
 for i = 1:numel(files)
     file = files{i};
