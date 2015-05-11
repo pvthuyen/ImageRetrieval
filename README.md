@@ -27,6 +27,7 @@
 - copy the data to directory: data/image/
 - copy the queries to directory: query/image/
 - copy groundtruth files to directory: groundtruth/
+- run compile_script to initialize the groundtruth program (compile_script.bat for Windows, compile_script.sh for Linux & Mac).
 - run step1, step2, step3, step4 sequentially.
 - ranked list are outputted to directory: ranklist/
 - average precision (AP) of each query is written to the directory: ap/
