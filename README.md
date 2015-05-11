@@ -16,7 +16,8 @@
 ### flann-1.8.4: fast library for approximate nearest neighbors
 ### vlfeat-0.9.19: library of computer vision algorithms
 
-- createParams.m: 
+## Steps:
+- createParams.m: store parameters, data locations
 - step1_extract.m: extract features of all query and data images
 - step2_quantize.m: perform quantization
 -  step3_query.m: process all queries and retrieve ranked lists
