@@ -13,14 +13,14 @@
 ### feature_detector:
  - compute_descriptors.mac, compute_descriptors_32bit.ln, compute_descriptors_64bit.ln: extract features and compute descriptors for MAC/Linux32/Linux64, respectively
 
-### flann-1.8.4: fast library for approximate nearest neighbors
-### vlfeat-0.9.19: library of computer vision algorithms
+### flann-1.8.4: fast library for approximate nearest neighbors (http://www.cs.ubc.ca/research/flann/)
+### vlfeat-0.9.19: library of computer vision algorithms (http://www.vlfeat.org/)
 
 ## Steps:
 - createParams.m: store parameters, data locations
 - step1_extract.m: extract features of all query and data images
 - step2_quantize.m: perform quantization
--  step3_query.m: process all queries and retrieve ranked lists
+- step3_query.m: process all queries and retrieve ranked lists
 - step4_evaluate.m: compute mean average precision of all ranked lists
 
 # How to run
