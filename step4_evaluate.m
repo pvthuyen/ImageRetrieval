@@ -9,9 +9,9 @@ files = {files.name};
 if strfind(params.os, 'win') % Window
     exeFile = fullfile(params.groundtruthPath, 'compute_ap.exe');
 elseif strfind(params.os, 'mac') % Mac
-    exeFile = fullfile(params.groundtruthPath, 'compute_ap.mac');
+    exeFile = fullfile(params.groundtruthPath, 'compute_ap');
 else
-    exeFile = fullfile(params.groundtruthPath, 'compute_ap.ln');
+    exeFile = fullfile(params.groundtruthPath, 'compute_ap');
 end
 
 for i = 1:numel(files)

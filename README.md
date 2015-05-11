@@ -24,6 +24,7 @@
 - step4_evaluate.m: compute mean average precision of all ranked lists
 
 # How to run
+- compile groundtruth/compute_ap.cpp to get the suitable execution file for your os.
 - copy the data to directory: data/image/
 - copy the queries to directory: query/image/
 - copy groundtruth files to directory: groundtruth/
